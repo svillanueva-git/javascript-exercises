@@ -1,12 +1,16 @@
-const repeatString = function(entryString, repititions) {
+
+const number = Math.floor(Math.random() * 1000)
+
+
+const repeatString = function(entryString, number) {
 
   let finalString = '';
 
-  if (repititions < 0) {
+  if (number < 0) {
     return 'ERROR';
   } else
 
-  for (let i = 0; i < repititions; i++) {
+  for (let i = 0; i < number; i++) {
     finalString += entryString;
   }
 
