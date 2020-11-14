@@ -17,17 +17,17 @@ Strings in JavaScript cannot be reversed directly so you're going to have to spl
 
 
 
-/* 
+<br>
+<br>
 
-My Pseudo Code:
+<h1 style="font-size:2em">My Pseudo Code:</h1>
 
-reverseString will have an argument that takes a string
-Put the string in variable "userString"
-Split the string into an array using var arrayString = userString.split("");
-Make a loop: for (let i = 0; i < arrayString.length;)
-Access the last element of the array by using var lastElement = arrayString.pop()
-Declare a variable outside the loop that represents a blank string: finalString = "";
-Place letter into finalString = finalString + lastElement;
+reverseString will have an argument that takes a string<br>
+Put the string in variable "userString"<br>
+Split the string into an array using var arrayString = userString.split("");<br>
+Make a loop: for (let i = 0; i < arrayString.length;)<br>
+Access the last element of the array by using var lastElement = arrayString.pop()<br>
+Declare a variable outside the loop that represents a blank string: finalString = "";<br>
+Place letter into finalString = finalString + lastElement;<br>
 Repeat loop until there are no more letters
 
-*/
