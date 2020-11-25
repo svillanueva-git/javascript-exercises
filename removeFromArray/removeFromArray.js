@@ -1,8 +1,16 @@
-const removeFromArray = function(array, arrayElement) {
+const removeFromArray = function(originalArray) {
 
-    let arrayPosition = array.indexOf(arrayElement);
-    array.splice(arrayPosition, 1);
-    return array;
+    for (let i = 1; i < arguments.length; i++ ) {
+        let indexOfElement = originalArray.indexOf(arguments[i]);
+        originalArray.splice(indexOfElement, 1);
+    }
+
+    return originalArray;
 }
 
 module.exports = removeFromArray
+
+
+
+
+

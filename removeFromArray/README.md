@@ -20,8 +20,8 @@ the first test on this one is fairly easy, but there are a few things to think a
 
 <h1 style="font-size:2em">My Pseudo Code:</h1>
 
-The removeFromArray function will take two arguments: an "array" AND an "arrayElement" that contains an element from said array<br>
-Then find the position of the element within the array, by using "var arrayPosition = array.indexOf(arrayElement)"<br>
-Then to remove the element from the array, do "array.splice(arrayPosition, 1)"<br>
-This will return a new array with that element removed<br>
-Add "return array" on the last line to return the array to global<br>
+To pass the removeFromArray function an array, and sequentually, with a variable number of arguments, we will need to utilize the arguments object.<br><br>
+(1) First, the removeFromArray function needs to be declared with a single argument that represents the placeholder of the array that will be modified.<br><br>
+(2) Then, a for loop is needed to analyze each additional argument that is called.<br><br>
+(3) The for loop will stop at the last called argument.<br><br>
+(4) Lastly, the modified array is then returned to the function caller.<br><br>
